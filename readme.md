@@ -1,16 +1,11 @@
-# SIMPLE REACT TEMPLATE
+Day 5 of 100 - I built a React project and pulled data from the movies API OMDB API. I started by installing React and creating a folder for the project. Then, I connected and pushed the folder to github. The next step was deploying it via Netlify. Then, I created a file called api.html to test the fetch and ensure there are no CORS issues and that the API is useful and operational: 
 
-#### Created by Alex Merced of AlexMercedCoder.com/devNursery.com
+fetch("http://www.omdbapi.com/?t=True+Romance&apikey=523fa1a9")
+        .then(response=> response.json())
+        .then(data => {
+            console.log(data)
+        })
 
-This is a minimalistic webpack react build. Best for practicing react, doesn't have many of the testing and post-processing features other builds have. Although you can add webpack and babel plugins as you wish if you want to use this as a starting place for a more powerful build setup.
+I used Live Server to view the browser and verififed the data is showing under the console tab.  I created 3 components (Header, Home, List) and then I installed react router (npm install react-router react-router-dom). Then I imported {BrowserRouter as Router, Route, Switch}. 
 
-Make sure to remove the git repository
-
-`sudo rm -r .git` from the root folder
-
-Otherwise...
-
-`npm run dev` to run dev server
-`npm run build` to build into build folder
-
-- sass is enabled, so feel free to use sass files
+Everything will be wrapped in the Router component <Router>

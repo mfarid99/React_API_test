@@ -1,4 +1,72 @@
-h1,
-h2 {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Yeon+Sung&display=swap');
+
+:root {
+
+  --main-font: 'Open Sans', sans-serif;
+  --title-font: 'Major Mono Display', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font);
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: rgb(204, 204, 204);
+}
+
+nav div {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+}
+
+nav div:hover {
+background-color: red;
+color: purple;
+}
+
+
+main {
+  text-align: center;
+}
+
+main div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+img {
+
+  height: 900px;
+  width: 600px;
+}
+
+.info {
+  display: block;
+  flex-wrap: wrap;
+  
+
+}
+
+div > div > h1 {
+  font-size: 2em;
 }

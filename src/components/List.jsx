@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 const terminator = {
 
@@ -31,21 +33,23 @@ export const List = (props) => {
     }, [selected]);
 
     return list ? (
-        <div className="info">
-
-<img src = {list.Poster} />
-            <div> 
+            <Container fluid>
+                  <Row>
+                  <Col>
+            <img className="poster" src = {list.Poster} />
+                   </Col>
+                   <Col> 
             <div> <h1>{list.Title}</h1> </div>
-            <div><h1>{list.Year} </h1></div>
+             <div><h1>Year:{list.Year} </h1></div>
 
-            <div><h1> {list.Rated} </h1></div>
+            <div><h1> Rated:{list.Rated} </h1></div>
 
-            <div> <h1> {list.Director}</h1></div>
-            <div> <h1> {list.BoxOffice}</h1></div>
+           <div> <h1>  Director:{list.Director}</h1></div>
+            <div> <h1> Box Office:{list.BoxOffice}</h1></div>
 
-            <div> <p> <h3> {list.Plot}</h3></p></div>
-
-            </div>
-        </div>
+            <div> <p> <h3> <span className="plot"> Plot:</span>  {list.Plot}</h3></p></div>
+            </Col>
+            </Row>
+            </Container>
     ) : <h1>Loading...</h1>
 };

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Yeon+Sung&display=swap');
 
@@ -22,8 +23,7 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
+  display: block;
   padding: 10px;
   margin: 10px auto;
   background-color: rgb(204, 204, 204);
@@ -38,7 +38,7 @@ nav div {
 }
 
 nav div:hover {
-background-color: red;
+background-color: gray;
 color: purple;
 }
 
@@ -54,19 +54,22 @@ main div {
 
 }
 
-img {
+.poster {
 
-  height: 900px;
+  height: 800px;
   width: 600px;
 }
 
 .info {
-  display: block;
-  flex-wrap: wrap;
+  display: inline;
+  border: solid 5px;
+}
   
+p {
 
+  width: 700px;
 }
 
-div > div > h1 {
-  font-size: 2em;
+.plot {
+  font-size: 1.4em;
 }

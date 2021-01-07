@@ -45,7 +45,7 @@ export const Nav = (props) => {
         </NavDropdown.Item>
 
         <NavDropdown.Item href="#action/3.5"> 
-        <Link to="/terminatorgenisys">
+        <Link to="/terminatorgenysis">
             <div >
                 Terminator Genisys
             </div>

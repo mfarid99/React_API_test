@@ -10,12 +10,13 @@ const terminator = {
 
     terminator3: "https://www.omdbapi.com/?t=terminator+3&apikey=523fa1a9", 
 
-    terminatorgenisys: "https//www.omdbapi.com/?t=terminator+genisys&apikey=523fa1a9",
+    terminatorgenysis: "https://www.omdbapi.com/?t=terminator+genisys&apikey=523fa1a9",
 
     terminatordarkfate: "https://www.omdbapi.com/?t=terminator+dark+fate&apikey=523fa1a9",
 
     terminatorsalvation: "https://www.omdbapi.com/?t=terminator+salvation&apikey=523fa1a9",
 }
+
 
 export const List = (props) => { 
 

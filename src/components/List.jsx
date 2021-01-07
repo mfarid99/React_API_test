@@ -4,17 +4,17 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const terminator = {
 
-    theterminator: "http://www.omdbapi.com/?t=the+terminator&apikey=523fa1a9",
+    theterminator: "https://www.omdbapi.com/?t=the+terminator&apikey=523fa1a9",
 
-    terminator2: "http://www.omdbapi.com/?t=terminator+2&apikey=523fa1a9",
+    terminator2: "https://www.omdbapi.com/?t=terminator+2&apikey=523fa1a9",
 
-    terminator3: "http://www.omdbapi.com/?t=terminator+3&apikey=523fa1a9", 
+    terminator3: "https://www.omdbapi.com/?t=terminator+3&apikey=523fa1a9", 
 
-    terminatorgenisys: "http://www.omdbapi.com/?t=terminator+genisys&apikey=523fa1a9",
+    terminatorgenisys: "https//www.omdbapi.com/?t=terminator+genisys&apikey=523fa1a9",
 
-    terminatordarkfate: "http://www.omdbapi.com/?t=terminator+dark+fate&apikey=523fa1a9",
+    terminatordarkfate: "https://www.omdbapi.com/?t=terminator+dark+fate&apikey=523fa1a9",
 
-    terminatorsalvation: "http://www.omdbapi.com/?t=terminator+salvation&apikey=523fa1a9",
+    terminatorsalvation: "https://www.omdbapi.com/?t=terminator+salvation&apikey=523fa1a9",
 }
 
 export const List = (props) => { 
